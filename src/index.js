@@ -47,7 +47,7 @@ export default class KeyboardAccessory extends Component {
   keyboardShow(e) {
     LayoutAnimation.easeInEaseOut();
     this.setState({
-      bottom: isIphoneX() ? (e.endCoordinates.height - getBottomSpace()) : e.endCoordinates.height
+      bottom: isIphoneX() ? (e.endCoordinates.height - getBottomSpace()) : Platform.OS === 'android' ? 0 : e.endCoordinates.height
     });
   }
 
