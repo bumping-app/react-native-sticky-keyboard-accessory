@@ -80,7 +80,7 @@ export default class KeyboardAccessory extends Component {
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    left: 0,
+    
     right: 0,
     bottom: 0,
   }
